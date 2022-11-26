@@ -1,0 +1,83 @@
+:root {
+  --color-bg: #bebebe;
+  --color-bg-secondary: #ffffff;
+  --color-text: #000000;
+  --border-radius: 0.35rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container-grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-search {
+  color: var(--color-text);
+  opacity: 0.5;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+.form-search i {
+  opacity: 0.5;
+}
+
+.form-search input {
+  outline: none;
+  margin: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.card {
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+}
+
+.card img {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content h3 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+}
